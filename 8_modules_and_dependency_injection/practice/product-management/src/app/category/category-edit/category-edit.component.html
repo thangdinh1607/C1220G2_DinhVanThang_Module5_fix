@@ -1,0 +1,41 @@
+<div class="container">
+  <h2> Edit category</h2>
+  <form *ngIf="editForm" [formGroup]="editForm" (ngSubmit)="updateCategory()">
+    <table>
+      <tr>
+        <td><label for="id"> ID </label></td>
+        <td><input type="number " formControlName="id" id="id" readonly ></td>
+        <div
+          *ngIf="!editForm.controls.id?.valid && (editForm.controls.id?.dirty || editForm.controls.id?.touched)">
+          <div [hidden]="!editForm.controls.id.errors.required">
+            <small style="color: red"> Not Empty </small>
+          </div>
+          <div [hidden]="!editForm.controls.id.errors.min">
+            <small style="color: red"> character > 0</small>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <td><label for="name"> Name</label></td>
+        <td><input type="text" formControlName="name" id="name"></td>
+        <div
+          *ngIf="!editForm.controls.name?.valid && (editForm.controls.name?.dirty || editForm.controls.name?.touched)">
+          <div [hidden]="!editForm.controls.name.errors.require">
+            <small style="color: red"> Not Empty </small>
+          </div>
+          <div [hidden]="!editForm.controls.name.errors.minlength">
+            <small style="color: red"> character > 5 </small>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button [disabled]="!editForm.valid" class="btn btn-primary">Edit</button>
+          <a [routerLink]="['/category/list']" class="btn btn-primary">Cancel </a>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+

@@ -1,0 +1,65 @@
+<div class="container">
+  <h2>Add new product</h2>
+  <form [formGroup]="createForm" (ngSubmit)="saveProduct()" novalidate class="form-control">
+    <table>
+      <tr>
+        <td><label for="id">ID</label></td>
+        <td><input type="number" id="id" formControlName="id"></td>
+
+        <div
+          *ngIf="!createForm.controls.id?.valid && (createForm.controls.id?.dirty ||createForm.controls.id?.touched )"
+        >
+          <div [hidden]="!createForm.controls.id.errors.required">
+            <small style="color: red">Not Empty </small>
+          </div>
+          <div [hidden]="!createForm.controls.id.errors.min">
+            <small style="color: red">
+              >0
+            </small>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" id="name" formControlName="name"></td>
+        <div
+          *ngIf="!createForm.controls.name?.valid && (createForm.controls.name?.dirty || createForm.controls.name?.touched)">
+          <div [hidden]="!createForm.controls.name.errors.required">
+            <small style="color: red"> Not Empty</small>
+          </div>
+          <div [hidden]="!createForm.controls.name.errors.minlength">
+            <small style="color: red"> character > 4 </small>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <td><label for="price">Price</label></td>
+        <td><input type="number" id="price" formControlName="price"></td>
+        <div
+          *ngIf="!createForm.controls.price?.valid && (createForm.controls.price?.dirty || createForm.controls.price?.touched)">
+          <div [hidden]="!createForm.controls.price.errors.required">
+            <small style="color: red"> Not Empty</small>
+          </div>
+          <div [hidden]="!createForm.controls.price.errors.min">
+            <small style="color: red"> > 0 </small>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <td><label for="description">Description</label></td>
+        <td><input type="text" id="description" formControlName="description"></td>
+        <div *ngIf="!createForm.controls.description?.valid && (createForm.controls.description?.dirty || createForm.controls.description?.touched)">
+          <small style="color: red">Character > 10 </small>
+        </div>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="float:right">
+          <button [disabled]="!createForm.valid" class="btn btn-primary">Create</button>
+        <a href="product/list" style="float:right" class="btn btn-primary"> Cancel </a>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</div>

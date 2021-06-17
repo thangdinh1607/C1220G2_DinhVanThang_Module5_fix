@@ -1,0 +1,17 @@
+<h2> Font size editor</h2>
+<div>
+  <label >111</label>
+  <input type="range" min="9" max="100" [value]="fontSize" (change)="changeFontSize($event)">
+</div>
+
+<p [style.fontSize.px]="fontSize">
+  One Way test
+</p>
+
+<div>
+  <label > 2222</label>
+  <input type="range" min="9" max="100" [(ngModel)]="fontSize2">
+</div>
+<p [style.fontSize.px]="fontSize2">
+  Two Way test
+</p>

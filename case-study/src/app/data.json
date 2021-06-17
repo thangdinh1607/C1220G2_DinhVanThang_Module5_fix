@@ -1,0 +1,151 @@
+{
+  "customer": [
+    {
+      "id": 4,
+      "customerCode": "KH-001",
+      "typeCustomer": 2,
+      "name": "Gau Gau",
+      "birthday": "2000-12-12",
+      "idCard": "123123123",
+      "phoneNumber": "0905123456",
+      "email": "gaugau@gmail.com",
+      "address": "Da Nang"
+    },
+    {
+      "id": 5,
+      "customerCode": "KH-001",
+      "typeCustomer": 3,
+      "name": "Gau Gau",
+      "birthday": "2000-12-12",
+      "idCard": "123123123",
+      "phoneNumber": "0905123456",
+      "email": "gaugau@gmail.com",
+      "address": "Da Nang"
+    },
+    {
+      "id": 8,
+      "customerCode": "KH-001",
+      "typeCustomer": 1,
+      "name": "Gau Gau",
+      "birthday": "2000-12-12",
+      "idCard": "123123123",
+      "phoneNumber": "0905123456",
+      "email": "gaugau@gmail.com",
+      "address": "Da Nang"
+    },
+    {
+      "id": 9,
+      "customerCode": "KH-001",
+      "typeCustomer": 2,
+      "name": "Gau Gau",
+      "birthday": "2000-12-12",
+      "idCard": "123123123",
+      "phoneNumber": "0905123456",
+      "email": "gaugau@gmail.com",
+      "address": "Da Nang"
+    },
+    {
+      "id": 10,
+      "customerCode": "KH-001",
+      "typeCustomer": 3,
+      "name": "Gau Gau",
+      "birthday": "2000-12-12",
+      "idCard": "123123123",
+      "phoneNumber": "0905123456",
+      "email": "gaugau@gmail.com",
+      "address": "Da Nang"
+    },
+    {
+      "id": 11,
+      "customerCode": "KH-001",
+      "typeCustomer": 2,
+      "name": "Gau Gau",
+      "birthday": "2000-12-12",
+      "idCard": "123123123",
+      "phoneNumber": "0905123456",
+      "email": "gaugau@gmail.com",
+      "address": "Da Nang"
+    },
+    {
+      "id": 12,
+      "customerCode": "kh-123",
+      "typeCustomer": 3,
+      "name": "afasfasfasf",
+      "birthday": "2021-06-23",
+      "idCard": "12312344",
+      "phoneNumber": "0905333333",
+      "email": "gaugau@gmail.com",
+      "address": "Da Nang"
+    },
+    {
+      "id": 13,
+      "customerCode": "kh-123",
+      "typeCustomer": 2,
+      "name": "asdasdasd",
+      "birthday": "2021-06-06",
+      "idCard": "123456541",
+      "phoneNumber": "0905444444",
+      "email": "tasd@gmail.com",
+      "address": "ha noi"
+    },
+    {
+      "id": 14,
+      "customerCode": "KH-999",
+      "typeCustomer": 1,
+      "name": "asdasdasdasd",
+      "birthday": "2021-06-17",
+      "idCard": "123123123",
+      "phoneNumber": "0902222333",
+      "email": "asdasd@gmail.com",
+      "address": "saigon"
+    },
+    {
+      "customerCode": "KH-001",
+      "typeCustomer": 2,
+      "name": "asdasdasdasd",
+      "birthday": "2021-06-24",
+      "idCard": "123123121",
+      "phoneNumber": "0905222222",
+      "email": "sadasd@gmail.comm",
+      "address": "ha noi",
+      "id": 15
+    },
+    {
+      "customerCode": "KH-002",
+      "typeCustomer": 2,
+      "name": "112312312",
+      "birthday": "2021-06-25",
+      "idCard": "321123321",
+      "phoneNumber": "0905666666",
+      "email": "12321@gmail.com",
+      "address": "danang",
+      "id": 18
+    }
+  ],
+  "typeCustomer": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    },
+    {
+      "name": "sdasdad",
+      "id": 7
+    }
+  ]
+}

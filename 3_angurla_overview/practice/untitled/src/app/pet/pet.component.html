@@ -1,0 +1,28 @@
+<div class="container">
+
+  <h2 class=""> Pet profile</h2>
+
+  <!--  <p> Name : {{pet.name}}</p>-->
+  <!--  <input type="range" min="100" max="500"  (change)="sizeImage($event)">-->
+
+  <!--  <p >-->
+  <!--    <img [src]="pet.image" alt="" [style.width.px]="size">-->
+  <!--  </p>-->
+  <div>
+    <label for="name"> Name </label>
+    <input type="text" [(ngModel)]="pet.name" placeholder="Name " id="name">
+  </div>
+  <div>
+    <label for="url"> Url </label>
+    <input type="text" [(ngModel)]="pet.image" placeholder="Image" id="url">
+  </div>
+  <div>
+    <label for="size"></label>
+    <input type="range" min="200" max="500" (change)="sizeImage($event)" id="size">
+
+  </div>
+  <p> Name {{pet.name}}</p>
+  <img [src]="pet.image" [style.width.px]="size">
+</div>
+
+

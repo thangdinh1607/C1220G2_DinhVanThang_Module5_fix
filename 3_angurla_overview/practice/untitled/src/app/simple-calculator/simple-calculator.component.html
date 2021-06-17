@@ -1,0 +1,27 @@
+<div class="container">
+  <h2 [style.color]="color">Calculator</h2>
+  <div>
+    <label for="number1">Number 1</label>
+    <input type="number" [value]="number1" id="number1" (change)="changeNumber1($event)">
+  </div>
+  <div>
+    <label for="number2">Number 2</label>
+    <input type="number" [value]="number2" id="number2" (change)="changeNumber2($event)">
+  </div>
+  <div>
+    <input type="submit" value="+" [style.color]="color" (click)="addition()">
+    <input type="submit" value="-" [style.color]="color" (click)="subtraction()">
+    <input type="submit" value="* "[style.color]="color" (click)="multiplication()">
+    <input type="submit" value="/ " [style.color]="color"(click)="division()">
+    <p> Result :   {{result}}</p>
+  </div>
+  <div>
+    <label for="color">Color</label>
+    <select (change)="changeColor($event)"  id="color">
+      <option value="#FF0000" style="color:#FF0000">|||||||</option>
+      <option value="#FFFF00" style="color:#FFFF00 ">||||||</option>
+      <option value="#008000" style="color: #008000">||||||</option>
+      <option value="##0000FF" style="color:#0000FF ">|||||||</option>
+    </select>
+  </div>
+</div>

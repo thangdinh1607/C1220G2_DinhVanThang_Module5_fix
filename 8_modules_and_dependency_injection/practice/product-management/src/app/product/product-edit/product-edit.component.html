@@ -1,0 +1,51 @@
+<div class="container">
+  <h2>Edit product</h2>
+  <form *ngIf="editForm"   [formGroup]="editForm" (ngSubmit)="update()">
+    <table>
+      <tr>
+        <td><label for="id">ID</label></td>
+        <td><input type="number" id="id" formControlName="id" readonly  ></td>
+      </tr>
+      <tr>
+        <td><label for="name">Name</label></td>
+        <td><input type="text" id="name" formControlName="name"></td>
+        <div
+          *ngIf="!editForm.controls.name.valid && (editForm.controls.name?.dirty || editForm.controls.name?.touched)">
+          <div [hidden]="!editForm.controls.name.errors.required">
+            <small style="color: red"> Not Empty</small>
+          </div>
+          <div [hidden]="!editForm.controls.name.errors.minlength">
+            <small style="color: red">Character > 4 </small>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <td><label for="price">Price</label></td>
+        <td><input type="number" id="price" formControlName="price"></td>
+        <div
+          *ngIf="!editForm.controls.price?.valid && (editForm.controls.price?.dirty || editForm.controls.price?.touched)">
+          <div [hidden]="!editForm.controls.price.errors.required" style="color: red"> Not Empty</div>
+          <div [hidden]="!editForm.controls.price.errors.min" style="color: red"> >0</div>
+        </div>
+      </tr>
+      <tr>
+        <td><label for="description">Description</label></td>
+        <td><input type="text" id="description" formControlName="description" ></td>
+        <div
+          *ngIf="!editForm.controls.description?.valid && ( editForm .controls.description?.dirty || editForm.controls.description?.touched)">
+          <div [hidden]="!editForm.controls.description.errors.required" style="color: red"> Not Empty</div>
+          <div [hidden]="!editForm.controls.description.errors.minlength" style="color: red"> character >10</div>
+        </div>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="float: right">
+          <Button [disabled]="!editForm.valid" class="btn btn-primary" >Edit</Button>
+          <a href="product/list" style="float:right" class="btn btn-primary">Cancel</a>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</div>
+

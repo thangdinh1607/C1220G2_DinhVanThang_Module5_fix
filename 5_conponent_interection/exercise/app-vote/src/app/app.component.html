@@ -1,0 +1,12 @@
+
+
+
+<app-rating-bar-component [chooseChild]="choose" ></app-rating-bar-component>
+<button [ngClass]="cssString1" (click)="choose1()">1</button>
+<button [ngClass]="cssString2" (click)="choose2()">2</button>
+<button [ngClass]="cssString3" (click)="choose3()">3</button>
+<button [ngClass]="cssString4" (click)="choose4()">4</button>
+<button [ngClass]="cssString5" (click)="choose5()">5</button>
+<p>---------</p>
+<app-countdown-app [countChild]="count" [countReset]="count"></app-countdown-app>
+<input type="text" [(ngModel)]="count">
